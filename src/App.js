@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
+import { Header } from './components/Header/index.jsx';
+import { Main } from './components/Main/index.jsx';
+import { Footer } from './components/Footer/index.jsx';
 
-function App() {
+  function App() {
+
+    const [position, setPosition] = useState();
+
+    const lockMenu = () => {
+      setPosition({position:'fixed'});
+    };
+    
+
+    const unlockMenu = () => {
+      setPosition({position:'initial'});
+    };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={position}>
+      <Header lockMenu={lockMenu} unlockMenu={unlockMenu} />
+      <Main />
+      <Footer />
     </div>
   );
 }
