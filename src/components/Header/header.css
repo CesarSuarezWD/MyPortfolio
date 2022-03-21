@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');
+/* @import url('https://fonts.cdnfonts.com/css/xharp');
+@import url('https://fonts.cdnfonts.com/css/shazbot');
+@import url('https://fonts.cdnfonts.com/css/endora');
+@import url('https://fonts.cdnfonts.com/css/mister-froggie');
+@import url('https://fonts.cdnfonts.com/css/royal-crescent'); */
+@import url('https://fonts.cdnfonts.com/css/mandatory-plaything');
+
+/* Estilos base */
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html
+{
+  scroll-behavior: smooth;
+}
+
+body
+{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+img
+{
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
+.container
+{
+  width: 70%;
+  margin: auto;
+}
+
+.container--flex
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.column
+{
+  width: 100%;
+}
+
+.header
+{
+  margin: auto;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  clip-path: polygon(0 100%, 0 0, 100% 0, 100% 93%, 65% 100%, 32% 93%);
+}
+
+/* .skew_header
+{
+  clip-path: polygon(0 100%, 0 0, 100% 0, 100% 93%, 65% 100%, 32% 93%);
+} */
+
+.header__img img
+{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: -2;
+  overflow: hidden;
+  margin: auto;
+  object-fit: cover;
+}
+
+.header__overlay:after {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    content: '';
+    transition: opacity 300ms ease;
+    background: #17193c;
+    background: linear-gradient(to right, rgba(23, 25, 60, 0.7), rgba(180, 33, 120, 0.7), rgba(255, 45, 37, 0.7));
+    background-size: 250% 250%;
+    animation: Waves 20s ease infinite;
+}
+
+@keyframes Waves
+{
+  0%
+  {
+    background-position: 0% 50%;
+  }
+
+  50%
+  {
+    background-position: 100% 50%;
+  }
+
+  100%
+  {
+    background-position: 0% 50%;
+  }
+}
+
+
+/* .header nav
+{
+  height: 70px;
+  background: #111111;
+  display: flex;
+  justify-content: space-between;
+} */
+
+.icono
+{
+  display: none;
+}
+
+.enlaces    /* menu */
+{
+  display: flex;
+  height: 100%;
+  width: 41%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.enlaces a  /* menu */
+{
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  padding: 4px 0;
+  transition: 0.7s ease-out;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.enlaces a:hover, .active  /* menu */
+{
+  border-top: 2px solid coral;
+  border-bottom: 2px solid coral;
+}
+
+.logo
+{
+  height: 10vh;
+  width: auto;
+}
+
+.logo__a
+{
+  z-index: 1;
+  height: 10vh;
+  width: 62px;
+  margin-left: 2rem;
+}
+
+.textos
+{
+  text-align: center;
+  color: #FFFFFF;
+  margin: auto;
+  margin-top: 150px;
+}
+
+.textos h1
+{
+  /* font-size: 6.9rem; */
+  font-size: 5.9rem;
+  width: 100%;
+  margin-bottom: 4rem;
+  font-weight: normal;
+  /* font-family: 'XHARP', sans-serif; */
+  /* font-family: 'Shazbot', sans-serif; */
+  /* font-family: 'Endora', sans-serif; */
+  /* font-family: 'Mister Froggie', sans-serif; */
+  /* font-family: 'Royal Crescent', sans-serif; */
+  font-family: 'Mandatory Plaything', sans-serif;
+}
+
+.textos h2
+{
+  font-size: 1.5rem;
+  font-weight: 100;
+  margin-top: 10px;
+  padding: 0.8rem;
+  border-top: 3px solid #FFFFFF;
+  border-bottom: 3px solid #FFFFFF;
+}
+
+.slogan
+{
+  width: 76%;
+  margin: auto;
+}

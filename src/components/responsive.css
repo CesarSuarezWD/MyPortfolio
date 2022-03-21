@@ -1,0 +1,524 @@
+@media screen and (max-width:1024px)
+{
+  body
+  {
+    font-size: 1.2rem;
+  }
+
+  .header, .header__img img, .header__overlay::after
+  {
+    height: 568px;
+  }
+
+  .enlaces
+  {
+    font-size: 1rem;
+    margin-right: 2rem;
+  }
+
+  .textos
+  {
+    margin-top: 100px;
+  }
+
+  .textos h1
+  {
+    font-size: 3.5rem;
+  }
+
+  .textos h2
+  {
+    font-size: 1.2rem;
+  }
+
+  .img__work
+  {
+    height: 530px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:768px)
+{
+  body
+  {
+    font-size: 1.5rem;
+  }
+
+  .header, .header__img img, .header__overlay::after
+  {
+    height: 100vh;
+  }
+
+  .icono
+  {
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    align-items: center;
+    color: #FFFFFF;
+    background: transparent;
+    padding: 20px;
+    z-index: 100;
+    cursor: pointer;
+    margin-right: 40px;
+  }
+
+  .enlaces
+    {
+      position: fixed;
+      font-size: 1.3rem;
+      height: 568px;
+      right: 0;
+      margin-right: 0;
+      width: 100%;
+      flex-direction: column;
+      transition: all 1s ease;
+      background: #f46b45;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(225deg, #eea849, #f46b45);
+      background: -o-linear-gradient(225deg, #eea849, #f46b45);
+      background: linear-gradient(225deg, #eea849, #f46b45);  /* Chrome 10-25, Safari 5.1-6 */
+       /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+       z-index: 50;
+    }
+
+    .uno
+    {
+      clip-path: circle(0% at 100% 0);
+    }
+    .dos
+    {
+      clip-path: circle(150% at 100% 0);
+    }
+
+    .textos h1
+    {
+      font-size: 3.5rem;
+    }
+
+    .textos h2
+    {
+      font-size: 1.2rem;
+    }
+
+    .bio
+    {
+      font-size: 1.2rem;
+    }
+
+    .img__work
+    {
+      height: 400px;
+      width: 100%;
+    }
+
+    .gradient__overlay:hover .title__product
+    {
+        font-size: 2rem;
+        transition: all 300ms ease;
+    }
+
+    .menu__footer
+    {
+      font-size: 1.2rem;
+    }
+    
+}
+
+@media screen and (max-width:740px)
+{
+  .enlaces
+    {
+      height: 100vh;
+      width: 100%;
+    }
+
+    .img__work
+    {
+      height: 340px;
+      width: 100%;
+    }
+}
+
+@media screen and (max-width:640px)
+{
+  .header, .header__img img, .header__overlay::after
+  {
+    height: 100vh;
+  }
+
+  .enlaces
+  {
+    font-size: 1.3rem;
+    height: 100vh;
+  }
+
+  /* .logo
+  {
+    margin-left: 20px;
+  } */
+
+  .icono
+  {
+    margin-right: 20px;
+  }
+
+  .textos
+  {
+    margin-top: 90px;
+  }
+
+  .textos h1
+  {
+    font-size: 3rem;
+  }
+
+  .textos h2
+  {
+    font-size: 1.2rem;
+  }
+
+  .about__title
+  {
+    padding: 5.5rem 2.5rem 0.5rem 0;
+  }
+
+  .bio
+  {
+    font-size: 1.2rem;
+  }
+
+  .gradient__overlay:hover .look__page
+  {
+      font-size: 0.8rem;
+  }
+
+  .img__about
+  {
+    margin-bottom: 2rem;
+  }
+
+  .phone a
+  {
+    font-size: 1.5rem;
+  }
+
+  .mail a
+  {
+    font-size: 1.1rem;
+  }
+
+  .social-icon
+  {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .social-icon__link
+  {
+    margin-bottom: 5%;
+  }
+
+  .contactme, .social, .site
+  {
+    margin: 3rem 0 0.5rem 0;
+  }
+
+  .menu__footer
+  {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width:480px)
+{
+  .header, .header__img img, .header__overlay::after
+  {
+    height: 100vh;
+  }
+
+  .enlaces
+  {
+    font-size: 1.3rem;
+    height: 100vh;
+  }
+
+  /* .logo
+  {
+    margin-left: 20px;
+  } */
+
+  .icono
+  {
+    margin-right: 10px;
+  }
+
+  .textos
+  {
+    margin-top: 90px;
+  }
+
+  .textos h1
+  {
+    font-size: 2rem;
+  }
+
+  .textos h2
+  {
+    font-size: 1.2rem;
+  }
+
+  .gradient__overlay:hover .look__page
+  {
+      display: block;
+      color: #FFFFFF;
+  }
+
+  .gradient__overlay:hover .title__product
+  {
+      font-size: 2rem;
+      transition: all 300ms ease;
+  }
+
+  .look__page
+  {
+    font-size: 1rem;
+  }
+
+  .img__work
+  {
+    height: 400px;
+  }
+
+  .gradient__overlay:hover .look__page
+  {
+      font-size: 1rem;
+  }
+
+  .about__title
+  {
+    padding: 5.5rem 2.5rem 0.5rem 0;
+  }
+
+  .img__about
+  {
+    max-width: 350px;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+
+  .bio
+  {
+    font-size: 1.2rem;
+  }
+
+  .phone a
+  {
+    font-size: 1.1rem;
+  }
+
+  .mail a
+  {
+    font-size: 1.1rem;
+  }
+
+  .social-icon
+  {
+    justify-content: space-around;
+  }
+
+  .contactme, .social, .site
+  {
+    margin: 3rem 0 0.5rem 0;
+  }
+
+  .menu__footer
+  {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width:370px)
+{
+  .header, .header__img img, .header__overlay::after
+  {
+    height: 100vh;
+  }
+
+  .enlaces
+  {
+    font-size: 1.3rem;
+  }
+
+  .textos
+  {
+    margin-top: 100px;
+  }
+
+  .textos h1
+  {
+    font-size: 2.7rem;
+  }
+
+  .textos h2
+  {
+    font-size: 1.2rem;
+  }
+
+  .gradient__overlay:hover .title__product
+  {
+      font-size: 1.8rem;
+      transition: all 300ms ease;
+  }
+
+  .img__work
+  {
+    height: 400px;
+  }
+
+  .about__title
+  {
+    padding: 5.5rem 2.5rem 0.5rem 0;
+  }
+
+  .bio
+  {
+    font-size: 1.1rem;
+  }
+
+  .phone a
+  {
+    font-size: 1.2rem;
+  }
+
+  .mail a
+  {
+    font-size: 0.9rem;
+  }
+
+  .social-icon
+  {
+    justify-content: space-around;
+  }
+
+  .contactme, .social, .site
+  {
+    margin: 3rem 0 0.5rem 0;
+  }
+
+  .menu__footer
+  {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width:568px)
+{
+  .column--50
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 49%;
+  }
+
+  .bio
+  {
+    font-size: .9rem;
+    padding-left: 2rem;
+  }
+
+  .img__about
+  {
+    margin-bottom: 12rem;
+  }
+
+  .vineta a
+  {
+    font-size: 1.1rem;
+  }
+
+  .mail
+  {
+    margin-bottom: 4rem;
+  }
+
+  .social-icon
+  {
+    margin: 2rem 0 4rem 0;
+  }
+}
+
+@media screen and (min-width:768px)
+{
+  .bio
+  {
+    font-size: 0.9rem;
+    padding: 2rem;
+    margin: 0 0 12rem 0.6rem;
+    border-radius: 20px;
+    background: #FAFAFA;
+    font-style: italic;
+  }
+
+  .contact, .social__media, .site__map{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .container--footer{
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (min-width:1024px)
+{
+  .column--33
+  {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    width: 32%;
+    height: 220px;
+    margin-top: 6rem;
+  }
+
+  .gradient__overlay:hover .title__product
+  {
+      font-size: 2.5rem;
+      transition: all 300ms ease;
+  }
+
+  .gradient__overlay:hover .look__page
+  {
+      font-size: 1.2rem;
+  }
+
+  .bio
+  {
+    font-size: 1.2rem;
+    margin: 0 0 12rem 0.9rem;
+  }
+
+  .vineta a
+  {
+    font-size: 1.1rem;
+    padding-right: 6rem;
+  }
+
+  .menu__footer li
+  {
+    font-size: 1.2rem;
+  }
+  .contact{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .social__media, .site__map{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

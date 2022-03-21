@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+/* Estilos base */
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html
+{
+  scroll-behavior: smooth;
+}
+
+body
+{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+img
+{
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
+.container
+{
+  width: 70%;
+  margin: auto;
+}
+
+.container--flex
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.column
+{
+  width: 100%;
+}
+
+.main
+{
+  padding: 2rem 0;
+  position: relative;
+}
+
+.about__title
+{
+  padding: 8.5rem 2.5rem 0.5rem 0;
+}
+
+.work
+{
+  padding-bottom: 4rem;
+}
+
+.work__title
+{
+  padding: 0.5rem 2.5rem 0.5rem 0;
+}
+
+.work__title, .about__title
+{
+  display: block;
+  margin-top: 1rem;
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.underline {
+    background-color: #555;
+    border: none;
+    display: block;
+    height: 1px;
+    overflow: visible;
+    position: relative;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.underline:before {
+    background-color: #000;
+    content: '';
+    display: block;
+    height: 4px;
+    left: 0;
+    position: absolute;
+    top: -2px;
+    width: 25%;
+    z-index: 1;
+}
+
+.underline__content
+{
+  width: 230px;
+}
+
+.img__work
+{
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 0%;
+  margin-bottom: 1.2rem;
+}
+
+.work__content
+{
+  position: relative;
+  width: 100%;
+}
+
+.work__content .work__overlay
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: rgba(48, 57, 82, 0.4);
+}
+
+.gradient__overlay
+{
+  position: relative;
+  width: 100%;
+  display:block;
+}
+
+.gradient__overlay .look__page
+{
+  position: absolute;
+  color: transparent;
+  display: inline;
+  transition: all 300ms ease;
+}
+
+.gradient__overlay:before
+{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  content: '';
+  opacity: 0;
+  transition: opacity 300ms ease;
+  /* background:  #ff7f50; */
+  background: linear-gradient(135deg, #ff7f50 0%, #ff1f25 100%);
+}
+
+.gradient__overlay:hover:before
+{
+  opacity: 0.8;
+}
+
+.gradient__overlay:hover .look__page
+{
+    display: block;
+    color: #FFFFFF;
+}
+
+.gradient__overlay:hover .title__product
+{
+    font-size: 1.7rem;
+    transition: all 300ms ease;
+}
+
+.title__product
+{
+  width: 90%;
+  color: #FFFFFF;
+  text-align: left;
+  position: absolute;
+  z-index: 1500;
+  top: 25%;
+  left: 25%;
+  transform: translateX(-25%) translateY(-25%);
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Lobster', cursive;
+  padding-left: 1.5rem;
+}
+
+.look__page
+{
+  width: 90%;
+  color: #FFFFFF;
+  text-align: left;
+  position: absolute;
+  z-index: 1500;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 1rem;
+  font-weight: bold;
+  padding-left: 1.5rem;
+}
+
+.about
+{
+  background: #F1F1F1;
+  margin-bottom: -10rem;
+}
+
+.skew_about
+{
+  clip-path: polygon(0 7%, 0 100%, 100% 100%, 100% 0, 65% 7%, 32% 0);
+}
+
+.img__about
+{
+  max-width: 350px;
+  margin: auto;
+  margin-top: 0;
+  margin-bottom: 12rem;
+}
+
+.bio
+{
+  padding: 2rem 0;
+  padding-bottom: 12rem;
+  text-align: justify;
+  font-family: 'Roboto', sans-serif;
+}
