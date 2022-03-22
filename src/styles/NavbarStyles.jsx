@@ -14,14 +14,14 @@ export const NavbarStyles = styled.nav`
   top: ${props => (props.open ? "0" : "-120%")};
   right: 0;
   width: 100%;
-  height: 100vh;
+  height: 10vh;
   // clip-path: polygon(0 100%, 0 0, 100% 0, 100% 93%, 65% 100%, 32% 93%);
   transition: top 0.3s linear;
 
   @media only screen and (min-width: 768px) {
     flex-direction: row;
     position: initial;
-    height: auto;
+    height: 10vh;
     justify-content: flex-end;
     background: #000000;
   }
