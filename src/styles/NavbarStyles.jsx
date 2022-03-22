@@ -14,7 +14,7 @@ export const NavbarStyles = styled.nav`
   top: ${props => (props.open ? "0" : "-120%")};
   right: 0;
   width: 100%;
-  height: 10vh;
+  height: 100vh;
   // clip-path: polygon(0 100%, 0 0, 100% 0, 100% 93%, 65% 100%, 32% 93%);
   transition: top 0.3s linear;
 
