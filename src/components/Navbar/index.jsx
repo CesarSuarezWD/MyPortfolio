@@ -43,7 +43,7 @@ function Navbar({ closeMenu, unlockMenu, open}) {
   });
 
   const handleClick = ()=>{
-    window.open("https://drive.google.com/file/d/1Qpaq8BgSclu7bD4yh6ayZfn4Y_0S5-Ii/view?usp=sharing");
+    window.open("https://drive.google.com/file/d/19u_ShDiGXcdtp7Cqanr1YgSzu50ep1f9/view?usp=sharing");
   }
   
   const [showModal, setShowModal] = useState(false);
