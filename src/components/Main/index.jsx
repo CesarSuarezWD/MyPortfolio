@@ -130,6 +130,19 @@ function Main (){
                                 </a>
                             </div>
                         </div>
+
+                        <div className="column column--50">
+                            <div className="work__content">
+                                <a href="https://cesarsuarezwd.github.io/redux_react/" target="_blank" rel="noreferrer">
+                                    <div className="gradient__overlay">
+                                        <img src="https://i.imgur.com/50gIViw.png"  alt="Pokedux pic" className="img__work" />
+                                        <div className="work__overlay"></div>
+                                        <h3 className="title__product">Pokedux</h3>
+                                        <div className="look__page">React / Redux<br></br><br></br>See the original page &#8658;</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     
                     </div>
                 </section>
